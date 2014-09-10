@@ -2,6 +2,9 @@
 # Env Variables
 #
 
+export VISUAL=vim
+export EDITOR=$VISUAL
+
 #
 # OS Specific Env Variables
 #
