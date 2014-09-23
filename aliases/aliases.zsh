@@ -17,7 +17,7 @@ alias ez='vim ~/dotfiles-local/zshrc'
 alias eg='vim ~/dotfiles-local/gitconfig'
 
 # git
-alias gh='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
+alias ghm='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
 
 # Bundler
 alias b="bundle"
