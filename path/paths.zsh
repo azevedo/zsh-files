@@ -19,6 +19,7 @@ if [[ $CURRENT_OS == 'OS X' ]]; then
     #
     # Normal Paths
     #
+    export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
 
     # Add RVM to PATH for scripting
     export PATH=$PATH:$HOME/.rvm/bin
