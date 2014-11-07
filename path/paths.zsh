@@ -20,7 +20,7 @@ if [[ $CURRENT_OS == 'OS X' ]]; then
     # Normal Paths
     #
     export JAVA_HOME="/Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home"
-    export CHROME_BIN="/opt/homebrew-cask/Caskroom/google-chrome/latest/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+    export CHROME_BIN=/opt/homebrew-cask/Caskroom/google-chrome/latest/Google\ Chrome.app/Contents/MacOS/Google\ Chrome
 
     # Add RVM to PATH for scripting
     export PATH=$PATH:$HOME/.rvm/bin
