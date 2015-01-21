@@ -29,6 +29,6 @@ alias be='bundle exec'
 alias migrate="bundle exec rake db:migrate && bundle exec rake db:migrate RAILS_ENV=test"
 alias rollback="bundle exec rake db:rollback && bundle exec rake db:rollback RAILS_ENV=test"
 alias rk="rake"
-alias s="rspec"
+alias s="bundle exec rspec"
 alias rs='bundle exec rails server'
 alias rc='bundle exec rails console'
