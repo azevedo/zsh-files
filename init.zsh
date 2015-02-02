@@ -10,3 +10,5 @@ source $SOURCE/functions/tmux.zsh
 source $SOURCE/path/paths.zsh
 
 source $SOURCE/aliases/aliases.zsh
+
+source $SOURCE/base16-shell/base16-google.dark.sh
