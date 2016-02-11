@@ -18,6 +18,7 @@ alias eg='vim ~/dotfiles-local/gitconfig'
 
 # git
 alias ghm='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
+alias vm='vim `git diff --name-only`'
 
 # Bundler
 alias b="bundle"
