@@ -56,7 +56,3 @@ function psgrep() {
     echo "!! Need name to grep for"
   fi
 }
-
-function cd() {
-  builtin cd $1 && ls
-}
