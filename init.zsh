@@ -3,9 +3,11 @@ SOURCE=${0%/*}
 source $SOURCE/env/env.zsh
 
 fpath=($SOURCE/completion $fpath)
+# completion
+autoload -U compinit
+compinit
 
 source $SOURCE/functions/functions.zsh
-source $SOURCE/functions/tmux.zsh
 
 source $SOURCE/path/paths.zsh
 

@@ -2,7 +2,6 @@
 alias e="$EDITOR"
 alias v="$VISUAL"
 alias l='ls -lah'
-alias ll='ls -lh'
 alias la='ls -lAh'
 alias md='mkdir -p'
 
@@ -24,12 +23,11 @@ alias vm='vim `git diff --name-only`'
 alias b="bundle"
 alias be='bundle exec'
 
-# Tests and Specs
-
 # Rails
 alias migrate="bundle exec rake db:migrate && bundle exec rake db:migrate RAILS_ENV=test"
 alias rollback="bundle exec rake db:rollback && bundle exec rake db:rollback RAILS_ENV=test"
-alias rk="rake"
-alias s="bundle exec rspec"
 alias rs='bundle exec rails server'
 alias rc='bundle exec rails console'
+
+#Subvisual
+alias s="bin/server"
