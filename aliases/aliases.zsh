@@ -10,8 +10,8 @@ alias doc='cd ~/Documents'
 alias dow='cd ~/Downloads'
 alias drop='cd ~/Dropbox'
 alias src='source ~/.zshrc'
-alias ev='"$EDITOR" ~/Projects/dotfiles/config/nvim/init.vim'
-alias ez='"$EDITOR" ~/Projects/dotfiles/zshrc'
+alias ev='"$EDITOR" ~/.dotfiles/config/nvim/init.vim'
+alias ez='"$EDITOR" ~/.dotfiles/zshrc'
 
 # git
 alias ghm='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
