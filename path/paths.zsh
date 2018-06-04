@@ -12,3 +12,6 @@ export PATH="$HOME/.bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 
 export PATH=$PATH:./node_modules/.bin:/usr/local/lib/node_modules
+
+# https://github.com/pyenv/pyenv-installer
+export PATH="~/.pyenv/bin:$PATH"
