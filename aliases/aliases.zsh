@@ -15,6 +15,7 @@ alias ez='"$EDITOR" ~/dotfiles/zshrc'
 
 # git
 alias ghm='[ ! -z `git rev-parse --show-cdup` ] && cd `git rev-parse --show-cdup || pwd`'
+alias gh="open \`git remote -v | grep fetch | awk '{print \$2}' | sed 's/git@/http:\/\//' | sed 's/com:/com\//'\`| head -n1"
 
 # Bundler
 alias b="bundle"
