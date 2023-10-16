@@ -30,3 +30,8 @@ alias rc='bundle exec rails console'
 
 #Subvisual
 alias s="bin/server"
+
+#Docker
+alias dcu="docker-compose up -d --quiet-pull --build"
+alias dcd="docker-compose down"
+alias dcs="docker-compose stop"
