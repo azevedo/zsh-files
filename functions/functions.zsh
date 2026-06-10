@@ -1,25 +1,20 @@
-#
-# Change file extensions recursively in current directory
-#
-#   change-extension erb haml
+# change-extension $old $new
+# Recursively rename files in the current directory, changing extension from $old to $new.
 function change-extension() {
   foreach f (**/*.$1)
     mv $f $f:r.$2
   end
 }
 
-#
-# Calls ls after changing path
-#
+# chpwd
+# Called after changing directories; runs ls to display contents.
 function chpwd() {
   emulate -L zsh
   ls
 }
 
-#
-# No arguments: `git status`
-# With arguments: acts like `git`
-#
+# g [$args]
+# Convenience wrapper for git. No arguments runs git status; with arguments passes them to git.
 function g() {
   if [[ $# > 0 ]]; then
     git $@
@@ -31,23 +26,20 @@ function g() {
 # Complete g like git
 compdef g=git
 
-#
-# Kills any process that matches a regexp passed to it
-#
+# killit $pattern
+# Kill all processes matching the given pattern using SIGKILL.
 function killit() {
   ps aux | grep -v "grep" | grep "$@" | awk '{print $2}' | xargs kill -9
 }
 
-#
-# Make directory and change into it.
-#
+# mcd $dir
+# Create directory $dir (with parent directories as needed) and change into it.
 function mcd() {
   mkdir -p "$1" && cd "$1";
 }
 
-#
-# Greps for processes
-#
+# psgrep $pattern
+# Search for processes matching the given pattern and display process information.
 function psgrep() {
   if [ ! -z $1 ] ; then
     echo "Grepping for processes matching $1..."
@@ -57,12 +49,14 @@ function psgrep() {
   fi
 }
 
+# hist
+# Display the 10 most frequently used commands from shell history.
 function hist() {
     history | awk '{a[$2]++}END{for(i in a){print a[i] " " i}}' | sort -rn | head
 }
 
-# Extract archives - use: extract <file>
-# Credits to http://dotfiles.org/~pseup/.bashrc
+# extract $file
+# Extract archive file in any common format (.tar.gz, .zip, .rar, etc).
 function extract() {
     if [ -f $1 ] ; then
         case $1 in
